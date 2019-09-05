@@ -30,13 +30,13 @@ def division():
  
  def ArithType():
      MathChoice = input("addition, subtraction, multiplication, division: ")
-     if MathChoice == 'addition':
+     if MathChoice == 'a':
          addition()
-     if MathChoice == 'subtraction':
+     if MathChoice == 's':
          subtraction()
-     if MathChoice == 'multiplication':
+     if MathChoice == 'm':
          multiplication()
-     if MathChoice == 'division':
+     if MathChoice == 'd':
          division()
 
 Fname = input("Please type your first name: ")
@@ -48,10 +48,10 @@ print("Let's have some fun with elementary mathematics!")
 
 ArithType()
 while True:
-    choice = input("Try again. 'yes' or 'no': ")
-    if choice == 'yes':
+    choice = input("Try again. 'y' or 'n': ")
+    if choice == 'y':
         ArithType()
-    elif choice == 'no':
+    elif choice == 'n':
         print("Thanks, "+FullName+", hope this experience added up to a great time!")
         break
          
